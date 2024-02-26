@@ -45,8 +45,8 @@ border-radius: 5px;
 }
 .msg{
     border-radius: 5px;
-    border: 1px solid white;
-    width: 23%;
+    /* border: 1px solid white; */
+    /* width: 23%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,5 +60,5 @@ border-radius: 5px;
 .msg i{
     color: #FFD43B;
     font-size: 25px;
-    
+    padding-left: 4px;
 }
