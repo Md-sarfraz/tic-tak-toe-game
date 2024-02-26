@@ -1,5 +1,6 @@
  let boxes=document.querySelectorAll(".box")
 let resetBtn=document.querySelector(".reset-btn")
+let msg=document.querySelector(".msg")
 winnerMsg=document.querySelector(".msg h2")
 let turnO=true;
 const winPatterns =[
@@ -36,8 +37,11 @@ const checkWinner=()=>{
       {
         if(pos1Val==pos2Val && pos2Val==pos3Val)
         {
+          
             winnerMsg.innerText= "Player "+pos1Val+" is Winner"
-
+           let icon= document.createElement("i")
+           msg.appendChild(icon)
+          icon.classList.add("fa-solid", "fa-trophy")
         }
       }
 
